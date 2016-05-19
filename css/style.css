@@ -6,9 +6,9 @@ p,
 h1,
 h2,
 h3 {
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+  padding:0;
+  margin:0;
+  font-family: "Titillium Web", sans-serif;
   line-height: 1.25;
 }
 
@@ -19,7 +19,8 @@ body {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: slategrey;
+  margin-top: 25px;
 }
 
 .center-content {
@@ -33,7 +34,7 @@ body {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #e88f3f;
   line-height: 48px;
   display: inline;
 }
@@ -45,6 +46,10 @@ span {
 #role {
   color: #fff;
   padding-left: 1em;
+}
+
+[class*="zocial-"]:before {
+  font-family: "zocial", sans-serif;
 }
 
 ul {
@@ -69,7 +74,7 @@ span {
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #e88f3f;
 }
 
 .white-text {
@@ -85,7 +90,8 @@ img {
   float: left;
   width: 200px;
   display: none;
-  padding-right: 20px;
+  margin-right: 20px;
+  border: 1px solid #fff;
 }
 
 .welcome-message {
@@ -105,17 +111,50 @@ h3 {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #e88f3f;
 }
 
 #skills li {
   line-height: 1.5;
+  list-style-type: square;
+  list-style-position: inside;
+  color: #fff;
+  margin-left: 20px;
+}
+
+#skills li span {
+  position: relative;
+}
+
+.full {
+  display: inline-block;
+  position: absolute;;
+  left: 100px;
+  top: 8px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #89cede;
+  height: 1em;
+  margin-left: 20px;
+}
+
+.real {
+  display: inline-block;
+  position: absolute;;
+  left: 0;
+  border-radius: 10px;
+  background-color: #e88f3f;
+  height: 1em;
 }
 
 .gray {
   background-color: #f3f3f3;
   padding-bottom: 10px;
-  clear: both;
+  clear:both;
+}
+
+#workExperience {
+  margin-top: 25px;
 }
 
 h2 {
@@ -133,7 +172,7 @@ h2 {
 }
 
 a {
-  color: #1199c3;
+  color: #89cede;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -162,16 +201,41 @@ p {
   line-height: 21px;
 }
 
-.project-entry img {
+.project-entry {
+  position: relative;
+}
+
+.normal {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 47.5%;
   margin-right: 5%;
+  display: inline-block;
 }
 
-.project-entry img:last-of-type {
+.normal:hover {
+  cursor: zoom-in;
+}
+
+.normal:last-of-type {
   margin-right: 0;
+}
+
+.hidden {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.show {
+  display: block;
+}
+
+.show:hover {
+  cursor: zoom-out;
 }
 
 #lets-connect {
@@ -184,30 +248,42 @@ p {
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background-color: slategrey;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #e88f3f;
 }
 
 @media only screen and (max-width: 770px) {
-  #lets-connect {
-    margin-top: 10%;
+  #header {
+    margin-top: 5px;
   }
 
   .biopic {
     width: 175px;
   }
-
   #skills-h3 {
     padding-top: 5px;
+  }
+
+  .full {
+    width: 140px;
+    left: 75px;
+  }
+
+  #workExperience {
+    margin-top: 10px;
+  }
+
+  #lets-connect {
+    margin-top: 10%;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  #lets-connect {
-    margin-top: 15%;
+  #header {
+    margin-top: 0;
   }
 
   .biopic {
@@ -218,9 +294,17 @@ p {
     padding-top: 5px;
   }
 
+  #workExperience {
+    margin-top: 5px;
+  }
+
   .project-entry img {
     max-width: 100%;
     margin-right: 0;
+  }
+
+  #lets-connect {
+    margin-top: 15%;
   }
 }
 
