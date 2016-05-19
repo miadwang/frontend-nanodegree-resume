@@ -1,8 +1,8 @@
 {
   "name": "frontend-nanodegree-resume",
   "version": "1.0.0",
-  "description": "1. Go to the [Javascript Basics course](https://www.udacity.com/course/ud804) and select \"View Course Materials.\" 2. Go through the videos and assignments in this course to learn the JavaScript necessary to build your resume. 3. Review your work against the Project Rubric (on the next page). 4. When you are satisfied with your project, submit it according to the Submission Instructions on the next page.",
-  "main": "index.js",
+  "description": "",
+  "main": "index.HTMLheaderName",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/miadwang/frontend-nanodegree-resume.git"
   },
-  "author": "",
+  "author": "Mia Wang <mia.d.wang@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/miadwang/frontend-nanodegree-resume/issues"
   },
   "homepage": "https://github.com/miadwang/frontend-nanodegree-resume#readme",
   "devDependencies": {
+    "bower": "^1.7.9",
     "eslint": "^2.10.0",
     "eslint-config-google": "^0.5.0"
   }

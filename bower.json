@@ -1,0 +1,22 @@
+{
+  "name": "frontend-nanodegree-resume",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Mia Wang <mia.d.wang@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/miadwang/frontend-nanodegree-resume",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "normalize-css": "normalize.css#^4.1.1"
+  }
+}
