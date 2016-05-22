@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 var bio = {
   "name": "Mia Wang",
@@ -17,7 +17,6 @@ var bio = {
     "JavaScript": 20
   },
   "biopic": "images/Mia.jpg",
-  "display": function() {}
 };
 
 bio.display = function() {
@@ -50,7 +49,6 @@ var work = {
       "description": "Material R&D"
     }
   ],
-  "display": function() {}
 };
 
 work.display = function() {
@@ -72,7 +70,6 @@ var projects = {
       "images": ["images/work-1.jpg", "images/work-2.jpg"]
     }
   ],
-  "display": function() {}
 };
 
 projects.display = function() {
@@ -125,8 +122,6 @@ var education = {
       "url": "https://www.udacity.com/course/responsive-images--ud882"
     }
   ],
-
-  "display": function() {}
 };
 
 education.display = function() {
